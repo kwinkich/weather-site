@@ -74,3 +74,43 @@ search.addEventListener('click', () => {
     });
 
 });
+
+
+var ua = {
+    'Humidity': 'Вологість',
+    'Wind Speed': 'Швидкість вітру',
+    'error': 'Ой! недійсне розташування :('
+};
+
+var en = {
+    'Humidity': 'Humidity',
+    'Wind Speed': 'Wind Speed',
+    'error': 'Oops! invalid location :('
+};
+
+//$(function () {
+//    $('.translate').click(function () {
+//        var lang = $(this).attr('id');
+
+//        $('.lang').each(function (index, item) {
+//            $(this).text(arrLang[lang][$(this).attr('key')]);
+//        });
+//    });
+//});
+
+
+function changeLang(lan) {
+    lengthObj = Object.getOwnPropertyNames(lan).length;
+    for (var i = 0; i <= lengthObj - 1; i++) {
+        objKey = Object.getOwnPropertyNames(lan)[i];
+        document.getElementById(objKey).innerText = func(objKey);
+    }
+
+    function func(a) {
+        for (key in lan) {
+            if (key == a) {
+                return (lan[key]);
+            }
+        }
+    }
+}

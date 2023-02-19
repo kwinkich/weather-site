@@ -15,37 +15,54 @@
     <title>Weather</title>
   </head>
   <body>
-    <div class="container">
-      <div class="search-box">
-        <i class="fa-solid fa-location-dot"></i>
-        <input type="text" placeholder="Enter your location" />
-        <button class="fa-solid fa-magnifying-glass"></button>
-      </div>
-
-      <div class="not-found">
-        <img src="img/404.png" />
-        <p>Oops! invalid location :(</p>
-      </div>
-
-      <div class="weather-box">
-        <img src="" />
-        <p class="temperature"></p>
-        <p class="description"></p>
-      </div>
-
-      <div class="weather-details">
-        <div class="humidity">
-          <i class="fa-solid fa-water"></i>
-          <div class="text">
-            <span></span>
-            <p>Humidity</p>
-          </div>
+    <div class="wrapper">
+      <div class="container-head">
+        <div class="translate-box">
+          <li class="item">
+            <button id="ua" class="translate" onclick="changeLang(ua);">
+              UA
+            </button>
+          </li>
+          <li class="item">
+            <button id="en" class="translate" onclick="changeLang(en);">
+              EN
+            </button>
+          </li>
         </div>
-        <div class="wind">
-          <i class="fa-solid fa-wind"></i>
-          <div class="text">
-            <span></span>
-            <p>Wind Speed</p>
+      </div>
+
+      <div class="container">
+        <div class="search-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text lang" placeholder="Enter your location" />
+          <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+          <img src="img/404.png" />
+          <p class="lang" id="error">Oops! invalid location :(</p>
+        </div>
+
+        <div class="weather-box">
+          <img src="" />
+          <p class="temperature"></p>
+          <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+              <span></span>
+              <p class="lang" id="Humidity">Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span></span>
+              <p class="lang" id="Wind Speed">Wind Speed</p>
+            </div>
           </div>
         </div>
       </div>

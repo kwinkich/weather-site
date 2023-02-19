@@ -14,6 +14,31 @@ body {
     background-color: #06283D;
 }
 
+
+.container-head {}
+
+.translate-box {
+    padding-bottom: 20px;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+.item {
+    color: #fff;
+}
+
+.item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.translate {
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .container {
     position: relative;
     width: 400px;
