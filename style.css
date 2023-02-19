@@ -20,15 +20,17 @@ body {
     padding-bottom: 20px;
     list-style: none;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
 .item {
     color: #fff;
+    text-align: center;
 }
 
 .item:not(:last-child) {
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .translate {
